@@ -16,7 +16,7 @@ dotenv.config();
 
 const connect = async () => {
   try {
-    await mongoose.connect("mongodb+srv://zennyrox22:village@cluster0.z68kkd7.mongodb.net/Tour?retryWrites=true&w=majority&appName=Cluster0");
+    await mongoose.connect("mongodb atlas database URL");
     console.log("Connected to mongoDB.");
   } catch (error) {
     throw error;
@@ -56,3 +56,4 @@ app.listen(8800, () => {
   connect();
   console.log("Connected to backend.");
 });
+
